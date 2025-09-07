@@ -63,6 +63,11 @@ color:var(--third-color);
 .section-heading .heading h2{
 font-size: 40px;
 }
+@media (max-width:375px) {
+    .section-heading .heading h2{
+        font-size: 35px;
+    }
+}
 .button {
     display: inline-block;
     background-color:var(--third-color);
@@ -106,7 +111,7 @@ header nav{
 header .container nav .bars{
     display: none;
 }
-@media(max-width:780px){
+@media(max-width:800px){
 header .container nav .bars{
     display:block;
     color:var(--color-white);
@@ -131,7 +136,7 @@ header ul li a.active{
 .sign{
     background-color:var(--third-color);
 }
-@media(max-width:780px){
+@media(max-width:800px){
 header ul{
     display:none;
     position: absolute;
@@ -250,6 +255,11 @@ header ul li a.active{
     cursor: pointer;
     border:1px solid var(--third-color);
     text-transform: uppercase;
+}
+@media (max-width:767px) {
+    .landing .container .info form button{
+        font-size: 15px;
+    }
 }
 ::placeholder{
     font-size:17px;
@@ -621,7 +631,7 @@ footer p span{
 }
 @media (max-width:767px) {
 .shop-page h3{
-    font-size:33px;
+    font-size:45px;
 }
 }
 .shop-page span{
@@ -669,8 +679,8 @@ footer p span{
 }
 @media (max-width:687px){
 .filter ul li a{
-    margin: 0 5px;
-    padding: 10px 15px;
+    margin: 0 3px;
+    padding: 10px;
     font-size: 10px;
 }
 }
@@ -710,7 +720,6 @@ footer p span{
 }
 .single-product .container .info{
     width: 100%;
-    text-align: center;
 }
 }
 .single-product .container .info h4{
@@ -720,7 +729,7 @@ footer p span{
 }
 @media (max-width:767px) {
     .single-product .container .info h4{
-        font-size:22px;
+        font-size:19px;
     }
 }
 .single-product .container .info .price{
