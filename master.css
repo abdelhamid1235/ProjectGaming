@@ -142,32 +142,40 @@ header ul{
     position: absolute;
     flex-direction: column;
     top:82.4px;
-    width: 80%;
-    left:50%;
-    transform: translateX(-50%);
+    width: 100%;
+    right: 0;
     background-color:var(--color-white);
     text-align: center;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius:30px;
 } 
-header .container nav .bars:hover + ul{
+header ul::before {
+    content: "";
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+    right: 7px;
+    top: -40px;
+}
+header .container nav:hover ul{
     display: flex;
 } 
+header ul li{
+    padding:10px 0;
+}
 header ul li:not(:last-child){
     border-bottom: 1px solid var(--color-white-dark);
 }
 header ul li a{
     color:black;
-    padding:10px 0;
+    padding:10px;
 } 
-header ul li a:hover,
+header ul li:not(:last-child) a:hover,
 header ul li a.active{
     color:var(--third-color);
-    background-color:transparent;
+    background-color:#ddd;
 } 
-.sign{
-    background-color:transparent;
-}
 }
 /* End Header  */
 /* Start Landing  */
